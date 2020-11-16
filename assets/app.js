@@ -1,8 +1,6 @@
 // Import react
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
-import Navbar from "./js/components/navbar";
-import HomePage from "./js/pages/Homepage";
 import {HashRouter,Switch,Route,withRouter, Redirect} from "react-router-dom";
 import './styles/app.css';
 import CustomersPage from "./js/pages/CustomersPage";
@@ -14,7 +12,8 @@ import InvoicePage from "./js/pages/InvoicePage";
 import RegisterPage from "./js/pages/RegisterPage";
 import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
-
+import Navbar from "./js/components/Navbar";
+import HomePage from "./js/pages/Homepage";
 
 console.log('Bien le bonjour !');
 
