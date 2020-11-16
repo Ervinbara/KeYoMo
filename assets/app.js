@@ -13,7 +13,7 @@ import RegisterPage from "./js/pages/RegisterPage";
 import { toast, ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from "./js/components/Navbar";
-import HomePage from "./js/pages/Homepage";
+import HomePage from "./js/pages/HomePage";
 
 console.log('Bien le bonjour !');
 
