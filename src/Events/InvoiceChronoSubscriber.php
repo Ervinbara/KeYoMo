@@ -44,14 +44,13 @@ class InvoiceChronoSubscriber implements EventSubscriberInterface
             $nextChrono = $this->repository->findNextChrono($this->security->getUser());
 
             $invoice->setChrono($nextChrono);
-        }
-
+        
         //Attribution d'une date si la date n'est pas fourni
-        // if(empty($invoice->getSentAt())){
-        //     $invoice->setSentAt(new \DateTime());
-        // }
+        if(empty($invoice->getSentAt())){
+            $invoice->setSentAt(new \DateTime());
+        }
+      }
     }
-
 
 
 }

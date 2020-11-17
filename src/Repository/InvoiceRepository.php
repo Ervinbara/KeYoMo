@@ -22,16 +22,22 @@ class InvoiceRepository extends ServiceEntityRepository
 
     //Récupération du dertnier chrono d'un utilisateur
     public function findNextChrono(User $user){
-        return $this->createQueryBuilder("i")
-                    ->select("chrono")
-                    ->join("i.customer", "c")
-                    ->where("c.user = :user")
-                    ->setParameter("user", $user)
-                    ->orderBy("i.chrono","DESC")
-                    ->setMaxResults(1)  //Récup du chrono le plus grand
-                    ->getQuery()
-                    ->getSingleScalarResult() + 1;
-                }           
+        
+        try{
+            return $this->createQueryBuilder("i")
+                        ->select("chrono")
+                        ->join("i.customer", "c")
+                        ->where("c.user = :user")
+                        ->setParameter("user", $user)
+                        ->orderBy("i.chrono","DESC")
+                        ->setMaxResults(1)  //Récup du chrono le plus grand
+                        ->getQuery()
+                        ->getSingleScalarResult() + 1;
+            }catch(\Exception $e) {
+                return 1;
+            }           
+        }
+
     // /**
     //  * @return Invoice[] Returns an array of Invoice objects
     //  */
