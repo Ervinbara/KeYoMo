@@ -1,7 +1,6 @@
 import React, { useEffect,useState } from 'react';
 import { Link } from 'react-router-dom';
 import Fields from '../components/forms/Field';
-import axios from 'axios';
 import UsersAPI from '../services/usersAPI';
 import { toast } from 'react-toastify';
 

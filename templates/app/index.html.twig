@@ -1,9 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}SymReact application{% endblock %}
+{% block title %}Keep you Money{% endblock %}
 
 {% block stylesheets %}
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">
+
 {{ encore_entry_link_tags('app') }}
 {% endblock %}
 
@@ -14,5 +16,7 @@
 {% endblock %}
 
 {% block javascripts %}
+<!-- Permet le deroulement du menu burger  -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 {{ encore_entry_script_tags('app') }}
 {% endblock %}

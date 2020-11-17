@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import AuthAPI from '../services/authAPI';
 import Fields from '../components/forms/Field';
 import { toast } from 'react-toastify';
