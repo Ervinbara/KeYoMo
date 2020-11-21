@@ -7,21 +7,21 @@ const HomePage = (props) => {
         <div className="font">
             <div className="first_font">
                 <i class="fas fa-user-check"></i>
-                <p>Créer un compte</p> 
+                <p>Créer un compte 😉</p> 
             </div>
             <div className="between_1">
                 <i class="fas fa-long-arrow-alt-right"></i>
             </div>
             <div className="second_font">
                 <i class="fas fa-sign-in-alt"></i>
-                <p>Connecté vous !</p>  
+                <p>Connectez-vous 😲</p>  
             </div>
             <div className="between_2">
                 <i class="fas fa-long-arrow-alt-right"></i>
             </div>
             <div className="third_font">
                 <i class="fas fa-business-time"></i>
-                <p>Make your money !</p>
+                <p>Make your money 💸😏💸</p>
             </div>
         </div>
     </div>
