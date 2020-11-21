@@ -1,16 +1,31 @@
 import React from 'react';
 
 const HomePage = (props) => {
-    return ( <div className="test">
-    <h1 className="display-3">Hello, world!</h1>
-    <p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-    <hr className="my-4"/>
-    
-    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-    <p className="lead">
-      <a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-    </p>
-  </div> );
+    return ( 
+    <div className="background">
+        <h2 className="home_text">Gérer vos clients en toute simplicité 😄</h2>
+        <div className="font">
+            <div className="first_font">
+                <i class="fas fa-user-check"></i>
+                <p>Créer un compte</p> 
+            </div>
+            <div className="between_1">
+                <i class="fas fa-long-arrow-alt-right"></i>
+            </div>
+            <div className="second_font">
+                <i class="fas fa-sign-in-alt"></i>
+                <p>Connecté vous !</p>  
+            </div>
+            <div className="between_2">
+                <i class="fas fa-long-arrow-alt-right"></i>
+            </div>
+            <div className="third_font">
+                <i class="fas fa-business-time"></i>
+                <p>Make your money !</p>
+            </div>
+        </div>
+    </div>
+    );
 }
  
 export default HomePage;
